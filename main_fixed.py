@@ -82,7 +82,7 @@ async def handle_general(message: Message):
 
     try:
         response = client.chat.completions.create(
-            model="gpt-4",
+            model="gpt-4.1",
             messages=[
                 {"role": "system", "content": "Ты аналитик в стиле системного мышления. Помоги разобрать инвестиционную идею."},
                 {"role": "user", "content": message.text}
