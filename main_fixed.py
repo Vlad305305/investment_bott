@@ -3,7 +3,6 @@ import os
 from aiogram import Bot, Dispatcher, types
 from aiogram.types import Message, KeyboardButton, ReplyKeyboardMarkup
 from aiogram.enums import ParseMode
-from aiogram.client.session import TelegramAiohttpClient
 from aiogram.client.bot import DefaultBotProperties
 from aiogram import F
 from dotenv import load_dotenv
@@ -19,8 +18,7 @@ logging.basicConfig(level=logging.INFO)
 
 bot = Bot(
     token=BOT_TOKEN,
-    default=DefaultBotProperties(parse_mode=ParseMode.HTML),
-    session=TelegramAiohttpClient()
+    default=DefaultBotProperties(parse_mode=ParseMode.HTML)
 )
 dp = Dispatcher(bot)
 
