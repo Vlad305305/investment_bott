@@ -12,7 +12,7 @@ from aiogram.client.bot import DefaultBotProperties
 # Загружаем переменные окружения
 load_dotenv()
 
-
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 # Настройка логирования
